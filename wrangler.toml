@@ -9,7 +9,7 @@ run_worker_first = ["/api/*", "/sub/*", "/ws"]
 
 [[d1_databases]]
 binding = "DB"
-database_name = "vpnstan"
+database_name = "vpnstan_panel_db"
 database_id = "db0d6d70-2cb9-4334-9942-00c265efd801"
 
 [vars]
