@@ -1,0 +1,18 @@
+name = "vpnstan-cloudflare"
+main = "src/index.js"
+compatibility_date = "2026-10-02"
+
+[assets]
+directory = "./public"
+binding = "ASSETS"
+run_worker_first = ["/api/*", "/sub/*", "/ws"]
+
+[[d1_databases]]
+binding = "DB"
+database_name = "vpnstan"
+database_id = "REPLACE_WITH_YOUR_D1_DATABASE_ID"
+
+[vars]
+ADMIN_USERNAME = "admin"
+ADMIN_PASSWORD = "CHANGE_ME"
+PANEL_NAME = "vpnstan"

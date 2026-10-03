@@ -1,0 +1,13 @@
+CREATE TABLE IF NOT EXISTS clients (
+  id TEXT PRIMARY KEY,
+  name TEXT NOT NULL,
+  uuid TEXT NOT NULL UNIQUE,
+  token TEXT NOT NULL UNIQUE,
+  quota_bytes INTEGER NOT NULL DEFAULT 53687091200,
+  used_bytes INTEGER NOT NULL DEFAULT 0,
+  expires_at INTEGER NOT NULL,
+  enabled INTEGER NOT NULL DEFAULT 1,
+  created_at INTEGER NOT NULL
+);
+CREATE INDEX IF NOT EXISTS idx_clients_token ON clients(token);
+CREATE INDEX IF NOT EXISTS idx_clients_uuid ON clients(uuid);
