@@ -14,5 +14,5 @@ database_id = "REPLACE_WITH_YOUR_D1_DATABASE_ID"
 
 [vars]
 ADMIN_USERNAME = "admin"
-ADMIN_PASSWORD = "CHANGE_ME"
+ADMIN_PASSWORD = "admin"
 PANEL_NAME = "vpnstan"
